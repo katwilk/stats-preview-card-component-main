@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@100;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+    --Very_dark_blue: hsl(233, 47%, 7%); /* main background */
+    --Dark_desaturated_blue: hsl(244, 38%, 16%); /*card background*/
+    --Soft_violet: hsl(277, 64%, 61%);/* accent */
+    --White : hsl(0, 0%, 100%); /*(main heading, stats) */
+    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.75); /* main paragraph*/
+    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.6); /*(stat headings) */
+}
+html{
+    background-color: var(--Very_dark_blue);
+    display: flex;
+    justify-content: center;
+}
+body{margin-top: 178px;}
+.container{
+    width: 1000px;
+    height: 356px;
+    
+    background-color: var(--Dark_desaturated_blue);
+    display: flex;
+    justify-content: space-between;
+}
+.parent{
+    position: relative;
+}
+
+.graphic{
+    width: 500px;
+    height: 100%;
+    background-image: url("images/image-header-desktop.jpg");
+    
+}
+.cover{
+    width: 500px;
+    height: 100%;
+    background-color: var(--Soft_violet);
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+}
+.left{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Lexend Deca';
+}
+
+.disc{
+    color: var(--Slightly_transparent_white);
+    font-family: 'Inter';
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 45px;
+    line-height: 1.6;
+}
+.box{
+    width: 300px;
+    color:var(--White);
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Inter' sans-serif;
+}
+.he{
+    color:var(--White);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Lexend Deca' serif;
+    margin-top: 1px;
+}
+#insights{
+    color: var(--Soft_violet)
+}
+#t1{
+    color: var(--Slightly_transparent_white);
+    font-family: 'Lexend Deca' serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
